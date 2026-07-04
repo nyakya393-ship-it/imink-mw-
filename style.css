@@ -1,0 +1,144 @@
+/* =========================
+   BASE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #0f1630, #05070f);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR (スプラ風ネオン)
+========================= */
+
+.sidebar{
+    width:240px;
+    background: linear-gradient(180deg,#0d1430,#070a18);
+    padding:20px;
+    border-right:1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar h1{
+    color:#7c5cff;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.sidebar a{
+    display:block;
+    padding:12px;
+    margin:6px 0;
+    color:#aaa;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.2s;
+}
+
+.sidebar a:hover{
+    background:#1b2a55;
+    color:white;
+    transform:translateX(6px);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main{
+    flex:1;
+    padding:25px;
+}
+
+/* =========================
+   CARD（インクUI）
+========================= */
+
+.card{
+    background: linear-gradient(145deg,#141b33,#0c1124);
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:16px;
+    padding:15px;
+    margin:12px 0;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    transition:0.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px) scale(1.01);
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* =========================
+   BUTTONS（重要）
+========================= */
+
+button{
+    border:none;
+    padding:8px 12px;
+    border-radius:10px;
+    cursor:pointer;
+    margin:4px;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* 詳細 */
+.btn-detail{
+    background:#3b82f6;
+    color:white;
+}
+
+/* 削除（赤固定） */
+.btn-delete{
+    background:#ef4444;
+    color:white;
+}
+
+/* =========================
+   INPUT UI
+========================= */
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin:6px 0;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.1);
+    background:#0b1022;
+    color:white;
+    outline:none;
+}
+
+input:focus, select:focus, textarea:focus{
+    border-color:#7c5cff;
+    box-shadow:0 0 12px rgba(124,92,255,0.4);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h1,h2,h3{
+    color:#7c5cff;
+}

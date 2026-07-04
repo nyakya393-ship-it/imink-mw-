@@ -178,3 +178,11 @@ function avg(arr, key){
     if(arr.length === 0) return 0;
     return (arr.reduce((a,b) => a + (b[key] || 0), 0) / arr.length).toFixed(1);
 }
+<div class="card">
+  <div><b>${b.date}</b></div>
+  <div>${b.result} / ${b.stage}</div>
+  <div>${b.weapon}</div>
+
+  <button class="btn-detail">詳細</button>
+  <button class="btn-delete">削除</button>
+</div>

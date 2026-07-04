@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InkLog | 登録</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
+<h1>InkLog</h1>
+
+<a href="index.html">🏠 ホーム</a>
+<a href="register.html">🎮 登録</a>
+<a href="history.html">📜 戦績</a>
+<a href="analysis.html">📊 分析</a>
+</aside>
+
+<!-- ================= MAIN ================= -->
+<main class="main">
+
+<h2>🎮 試合登録</h2>
+
+<form id="battleForm">
+
+<!-- ===== 日時 ===== -->
+<label>日時</label>
+<input id="battleDate" type="datetime-local">
+
+<!-- ===== バトル種別 ===== -->
+<label>バトル種別</label>
+<select id="battleType">
+<option>レギュラーマッチ</option>
+<option>バンカラチャレンジ</option>
+<option>バンカラオープン</option>
+<option>Xマッチ</option>
+<option>イベントマッチ</option>
+<option>フェスマッチ</option>
+<option>トリカラバトル</option>
+<option>プライベートマッチ</option>
+</select>
+
+<!-- ===== ルール ===== -->
+<label>ルール</label>
+<select id="rule">
+<option>ナワバリバトル</option>
+<option>ガチエリア</option>
+<option>ガチヤグラ</option>
+<option>ガチホコバトル</option>
+<option>ガチアサリ</option>
+</select>
+
+<!-- ===== ステージ ===== -->
+<label>ステージ</label>
+<select id="stage">
+<option>バンカラ街</option>
+<option>ザトウマーケット</option>
+<option>マテガイ放水路</option>
+<option>ナメロウ金属</option>
+<option>マヒマヒリゾート</option>
+<option>ヒラメが丘団地</option>
+<option>クサヤ温泉</option>
+<option>ゴンズイ地区</option>
+<option>タラポートショッピングパーク</option>
+<option>ユノハナ大渓谷</option>
+</select>
+
+<!-- ===== ブキ ===== -->
+<label>ブキ</label>
+<select id="weapon">
+<option>スプラシューター</option>
+<option>わかばシューター</option>
+<option>シャープマーカー</option>
+<option>.52ガロン</option>
+<option>.96ガロン</option>
+<option>N-ZAP85</option>
+<option>ボールドマーカー</option>
+<option>スプラローラー</option>
+<option>カーボンローラー</option>
+<option>ホットブラスター</option>
+<option>ロングブラスター</option>
+<option>スプラチャージャー</option>
+<option>リッター4K</option>
+<option>スクイックリン</option>
+<option>ジムワイパー</option>
+</select>
+
+<!-- ===== ウデマエ ===== -->
+<label>ウデマエ</label>
+<select id="rank">
+<option>C-</option>
+<option>C</option>
+<option>C+</option>
+<option>B-</option>
+<option>B</option>
+<option>B+</option>
+<option>A-</option>
+<option>A</option>
+<option>A+</option>
+<option>S</option>
+<option>S+</option>
+<option>X</option>
+</select>
+
+<!-- ===== 結果 ===== -->
+<label>結果</label>
+<select id="result">
+<option value="win">🏆 勝利</option>
+<option value="lose">💀 敗北</option>
+<option value="disconnect">📡 切断</option>
+<option value="invalid">🚫 無効</option>
+</select>
+
+<!-- ===== スコア ===== -->
+<div class="grid">
+
+<input id="kill" type="number" placeholder="キル" value="0">
+<input id="assist" type="number" placeholder="アシスト" value="0">
+<input id="death" type="number" placeholder="デス" value="0">
+<input id="special" type="number" placeholder="スペシャル" value="0">
+<input id="paint" type="number" placeholder="塗りポイント" value="0">
+
+</div>
+
+<!-- ===== メモ ===== -->
+<label>メモ</label>
+<textarea id="memo" placeholder="反省・メモなど"></textarea>
+
+<!-- ===== 保存 ===== -->
+<button type="submit">🎯 保存する</button>
+
+</form>
+
+</main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
